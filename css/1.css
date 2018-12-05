@@ -1,0 +1,58 @@
+.banner {
+  width:500px;
+	height:300px;
+	border:1px solid red;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+}
+
+.long {
+  width:2500px;
+	font-size:0;
+	position:absolute;
+	left:0;
+  animation:banner 10s infinite;
+  -webkit-animation:banner 10s infinite;
+}
+
+.long img {
+  height: 300px;
+  width: 500px;
+}
+
+@keyframes banner {
+  0%,15% {
+    left:0;
+  }
+  25%,40% {
+  	left:-500px;
+  }
+  50%,65% {
+  	left:-1000px;
+  }
+  75%,90% {
+  	left:-1500px;
+  }
+  100% {
+  	left:-2000px;
+  }
+}
+
+@-webkit-keyframes banner {
+	0%,15% {
+	left:0;
+}
+25%,40% {
+	left:-500px;
+}
+50%,65% {
+	left:-1000px;
+}
+75%,90% {
+	left:-1500px;
+}
+100% {
+	left:-2000px;
+}
+}
